@@ -5,6 +5,7 @@ phases:
     build:
       commands:
         # Initialize Terraform
+        - cd ..
         - terraform init
 
         # Apply Terraform configuration
