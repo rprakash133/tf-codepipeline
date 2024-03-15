@@ -20,7 +20,6 @@ resource "aws_instance" "this" {
   availability_zone           = var.availability_zone
   subnet_id                   = var.subnet_id
   vpc_security_group_ids      = var.vpc_security_group_ids
-  user_data                   = templatefile(var.user_data_filepath, {})
   key_name                    = var.key_name
   iam_instance_profile        = var.iam_instance_profile
   disable_api_termination     = var.disable_api_termination
