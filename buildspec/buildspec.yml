@@ -5,6 +5,7 @@ phases:
     commands:
       # Initialize Terraform
       - cd ..
+      - pwd
       - terraform init
 
       # Apply Terraform configuration
